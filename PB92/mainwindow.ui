@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1451</width>
+    <height>1165</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="minimumSize">
+       <size>
+        <width>550</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-189</y>
+         <width>534</width>
+         <height>1288</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QPushButton" name="btn_initcom">
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cbox_coms"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_stop_cmd">
+              <property name="text">
+               <string>刷新</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="title">
+             <string>控制指令：</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="btn_zhijian">
+               <property name="text">
+                <string>维 护 自  检</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout_2">
+               <item row="24" column="1">
+                <widget class="QComboBox" name="comboBox_2"/>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="btn_s_link1">
+                 <property name="text">
+                  <string>启动Camer Link记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QPushButton" name="btn_s_422_1">
+                 <property name="text">
+                  <string>启动同步422通道1记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="text">
+                  <string>停止同步422通道3记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="0">
+                <widget class="QPushButton" name="pushButton_34">
+                 <property name="text">
+                  <string>启动网络通道数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="1">
+                <widget class="QPushButton" name="btn_e_ALL">
+                 <property name="text">
+                  <string>停止所有通道记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="0">
+                <widget class="QPushButton" name="pushButton_28">
+                 <property name="text">
+                  <string>启动同步422通道2数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="23" column="0">
+                <widget class="QLabel" name="label_11">
+                 <property name="text">
+                  <string>码率（bit）:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="1">
+                <widget class="QPushButton" name="pushButton_23">
+                 <property name="text">
+                  <string>停止网络通道记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="14" column="1">
+                <widget class="QPushButton" name="pushButton_29">
+                 <property name="text">
+                  <string>停止同步422通道2数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="30" column="0">
+                <widget class="QPushButton" name="pushButton_9">
+                 <property name="text">
+                  <string>数据销毁</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="1">
+                <widget class="QPushButton" name="pushButton_31">
+                 <property name="text">
+                  <string>停止同步422通道3数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QPushButton" name="btn_s_ALL">
+                 <property name="text">
+                  <string>启动所有通道记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="15" column="0">
+                <widget class="QPushButton" name="pushButton_30">
+                 <property name="text">
+                  <string>启动同步422通道3数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QPushButton" name="btn_e_link1">
+                 <property name="text">
+                  <string>停止Camer Link记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="1">
+                <widget class="QPushButton" name="pushButton_27">
+                 <property name="text">
+                  <string>停止同步422通道1数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QPushButton" name="pushButton_5">
+                 <property name="text">
+                  <string>启动异步422通道1记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="21" column="0">
+                <widget class="QPushButton" name="pushButton_32">
+                 <property name="text">
+                  <string>启动网络通道数据下传(同步通道4)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QPushButton" name="pushButton_19">
+                 <property name="text">
+                  <string>启动同步422通道2记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="text">
+                  <string>停止HD-SDI通道2视频记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="26" column="0">
+                <widget class="QPushButton" name="pushButton_11">
+                 <property name="text">
+                  <string>sdi-1编码参数设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="20" column="1">
+                <widget class="MyQComboBox" name="comboBox_3">
+                 <property name="contextMenuPolicy">
+                  <enum>Qt::DefaultContextMenu</enum>
+                 </property>
+                 <property name="editable">
+                  <bool>false</bool>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>1Mb/s</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>2Mb/s</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>4Mb/s</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>8Mb/s</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QPushButton" name="btn_s_PAL">
+                 <property name="text">
+                  <string>启动同步422通道4记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="pushButton">
+                 <property name="text">
+                  <string>启动HD-SDI通道2视频记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="1">
+                <widget class="QPushButton" name="btn_e_PAL">
+                 <property name="text">
+                  <string>停止同步422通道4记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="text">
+                  <string>启动同步422通道3记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="19" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_7">
+                 <property name="font">
+                  <font>
+                   <pointsize>9</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>网络图片下传设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="34" column="1">
+                <widget class="QPushButton" name="pushButton_24">
+                 <property name="text">
+                  <string>物理自毁</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="26" column="1">
+                <widget class="QPushButton" name="pushButton_12">
+                 <property name="text">
+                  <string>sdi-2编码参数设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="23" column="1">
+                <widget class="QComboBox" name="comboBox"/>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="btn_e_HDSDI">
+                 <property name="text">
+                  <string>停止HD-SDI通道1视频记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="35" column="1">
+                <widget class="QPushButton" name="pushButton_10">
+                 <property name="text">
+                  <string>发送RS422</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="24" column="0">
+                <widget class="QLabel" name="label_12">
+                 <property name="text">
+                  <string>GOP（bit）:</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="0">
+                <widget class="QPushButton" name="pushButton_22">
+                 <property name="text">
+                  <string>启动网络通道记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="1">
+                <widget class="QPushButton" name="pushButton_6">
+                 <property name="text">
+                  <string>停止异步422通道1记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QPushButton" name="btn_e_422_1">
+                 <property name="text">
+                  <string>停止同步422通道1记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="btn_s_HDSDI">
+                 <property name="text">
+                  <string>启动HD-SDI通道1视频记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="22" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_6">
+                 <property name="font">
+                  <font>
+                   <pointsize>9</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>H265视频参数设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="30" column="1">
+                <widget class="QPushButton" name="pushButton_16">
+                 <property name="text">
+                  <string>复位</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="28" column="1">
+                <widget class="QPushButton" name="pushButton_close_timestam">
+                 <property name="text">
+                  <string>关闭视频时间戳叠加</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="17" column="1">
+                <widget class="QPushButton" name="pushButton_35">
+                 <property name="text">
+                  <string>停止网络通道数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
+                <widget class="QPushButton" name="pushButton_7">
+                 <property name="text">
+                  <string>启动模拟飞参数据记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="1">
+                <widget class="QPushButton" name="pushButton_8">
+                 <property name="text">
+                  <string>停止模拟飞参数据记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="13" column="0">
+                <widget class="QPushButton" name="pushButton_25">
+                 <property name="text">
+                  <string>启动同步422通道1数据下传</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="27" column="1">
+                <widget class="QPushButton" name="pushButton_14">
+                 <property name="text">
+                  <string>pal编码参数设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="28" column="0">
+                <widget class="QPushButton" name="pushButton_open_timestamp">
+                 <property name="text">
+                  <string>打开视频时间戳叠加</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="27" column="0">
+                <widget class="QPushButton" name="pushButton_13">
+                 <property name="text">
+                  <string>sdi-3编码参数设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QPushButton" name="pushButton_20">
+                 <property name="text">
+                  <string>停止同步422通道2记录</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="21" column="1">
+                <widget class="QPushButton" name="pushButton_33">
+                 <property name="text">
+                  <string>停止网络通道数据下传(同步通道4)</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="29" column="0" colspan="2">
+                <widget class="QGroupBox" name="groupBox_8">
+                 <property name="font">
+                  <font>
+                   <pointsize>9</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="title">
+                  <string>数据设置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="34" column="0">
+                <widget class="QPushButton" name="pushButton_17">
+                 <property name="text">
+                  <string>安全擦除</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="20" column="0">
+                <widget class="QLabel" name="label_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::LeftToRight</enum>
+                 </property>
+                 <property name="text">
+                  <string>设置网络图片下传速率：</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="readOnly">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="5,10">
+               <item>
+                <widget class="QPushButton" name="pushButton_bc">
+                 <property name="text">
+                  <string>选择存储目录</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_bc">
+                 <property name="text">
+                  <string>TextLabel</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="title">
+                <string>网络控制</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="1">
+                <widget class="QPushButton" name="pushButton_18">
+                 <property name="text">
+                  <string>下发文件</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="pushButton_21">
+                 <property name="text">
+                  <string>断开</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QRadioButton" name="radioButton">
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>自动发送</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QComboBox" name="comboBox__l"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="but_open_1">
+                 <property name="text">
+                  <string>打开摄像头</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="but_open_2">
+                 <property name="text">
+                  <string>打开摄像头</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QPushButton" name="btn_initcom_2">
+                 <property name="text">
+                  <string>打开串口</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="cbox_coms_2"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btn_stop_cmd_2">
+                 <property name="text">
+                  <string>刷新</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_13">
+                 <property name="maximumSize">
+                  <size>
+                   <width>30</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_26">
+               <property name="text">
+                <string>发送RS422</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>328</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>ARM命令</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_30">
+           <item>
+            <widget class="QRadioButton" name="rbtn">
+             <property name="text">
+              <string>发送自定义时间</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_23">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>年：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_year"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_24">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>月：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_yue"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_25">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>日：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_ri"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_26">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>时：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_shi"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_27">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>分：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_fen"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_28">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>秒：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_miao"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_29">
+             <item>
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>毫秒：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="le_haomiao"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="btn_initcom_3">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>打开串口</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cbox_coms_3">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_DOON">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>DO开</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_DOOFF">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>DO关</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_ARM_write">
+             <property name="text">
+              <string>打开调试信息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_ARM_read">
+             <property name="text">
+              <string>关闭调试信息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="text">
+              <string>PCIE复位</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="speedTestPushButton">
+             <property name="text">
+              <string>写速度测试</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="title">
+            <string>结果集：</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_20" stretch="2,1,0,2,1">
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="text">
+                   <string>用户信息结果集分析：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_p_count">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_tree">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="text">
+                   <string>全部展开</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="text">
+                   <string>ARM调试信息分析：</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_ARM_count">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_21">
+                <item>
+                 <widget class="QTreeWidget" name="treeCtrl">
+                  <attribute name="headerVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string notr="true">1</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTreeWidget" name="treeARM">
+                  <attribute name="headerVisible">
+                   <bool>false</bool>
+                  </attribute>
+                  <column>
+                   <property name="text">
+                    <string notr="true">1</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyQComboBox</class>
+   <extends>QComboBox</extends>
+   <header location="global">myqcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
