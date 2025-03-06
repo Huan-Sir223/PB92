@@ -86,29 +86,29 @@ void MyTcpServer::sendDataToClients()
 
     }
     else {
-//        if (bytesWritten >= Data.size()) {
-//            // 全部发送完成
-//            bytesWritten = 0;
-//            num = 0;
-//            qDebug() << "File sent successfully!";
-//            return;
-//        }
+       if (bytesWritten >= Data.size()) {
+           // 全部发送完成
+           bytesWritten = 0;
+           num = 0;
+           qDebug() << "File sent successfully!";
+           return;
+       }
 
-//        // 计算剩余数据大小
-//        qint64 remaining = Data.size() - bytesWritten;
-//        qint64 chunkSize = qMin(remaining, blockSize);
+       // 计算剩余数据大小
+       qint64 remaining = Data.size() - bytesWritten;
+       qint64 chunkSize = qMin(remaining, blockSize);
 
-//        // 发送当前块
-//        qint64 written = tcpSocket->write(Data.constData() + bytesWritten, chunkSize);
-//        if (written == -1) {
-//            qDebug() << "Write error:" << tcpSocket->errorString();
-//            return;
-//        }
+       // 发送当前块
+       qint64 written = tcpSocket->write(Data.constData() + bytesWritten, chunkSize);
+       if (written == -1) {
+           qDebug() << "Write error:" << tcpSocket->errorString();
+           return;
+       }
 
-//        bytesWritten += written;
+       bytesWritten += written;
 
-        qint64 write = tcpSocket->write(Data);
-        tcpSocket->waitForBytesWritten();
+        // qint64 write = tcpSocket->write(Data);
+        // tcpSocket->waitForBytesWritten();
 
         num++;
         qDebug()<<num;
